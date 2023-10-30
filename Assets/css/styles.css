@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --box-shadow: 5px 8px 15px #a98e60d1;
+    --border-all: 1px solid rgba(128, 128, 128, 0.692);
+    --backg-color-hover: #5c4033bd;
+    --color-lighter: #eed09dc9;
+}
+
+.main-page{
+    background-image: url('/Assets/img/cover-back.jpg');
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container{
+    text-align: left;
+    justify-content: start;
+    height: 70%;
+    width: 65%;
+    z-index: 1;
+    padding: 3%;
+    float: right;
+}
+
+.bar{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: start;
+    margin-top: 30%;
+    background-color: var(--color-lighter);
+    padding: 4% 10%;
+    box-shadow: var(--box-shadow);
+}
+
+header{
+    text-align: center;
+    border: 1px solid white;
+    padding: 10% 15%;
+    font-size: larger;
+}
+
+nav > *{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-top: 3%;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+}
+
+nav a:hover{
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+ul .nav a{
+    color: white;
+}
+
+
+.first-layout{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 100%;
+    border-top: var(--border-all);
+    padding: 1%;
+}
+
+aside{
+    flex: 2;
+    text-align: left;
+    padding: 60px;
+    width: 40%;
+    text-align: center;
+    background-color: #eed09dac;
+    box-shadow: var(--box-shadow);
+}
+
+#myself-pic{
+    width: 70%;
+    height: 55%;
+}
+
+ul li, ul a{
+    list-style: none;
+    text-decoration: none;
+    padding-bottom: 3%;
+    color: black;
+}
+
+ul a:hover{
+    font-weight: bold;
+}
+
+.contact-bar > *{
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    padding: 3%;
+}
+
+.title-first{
+    color: #5C4033;
+}
+
+.read-me{
+    flex: 4;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    width: 55%;
+    float: right;
+    padding: 3%;
+}
+
+.read-me > *:nth-child(even){
+    border-bottom: var(--border-all);
+}
+
+.read-me >*{
+    padding-bottom: 5%;
+}
+
+.qualities{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.left img{
+    padding: 0;
+    flex: 5;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    height: 80vh;
+    padding-right: 2%;
+    border-right: var(--border-all);
+}
+
+.left:hover::before{
+    z-index: 1;
+    content: 'Soft Skills';
+    background-color: var(--backg-color-hover);
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25%;
+    font-size: 20px;
+    padding: 2%;
+    width: 55%;
+}
+
+.right{
+    flex: 1;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    float: right;
+    padding-top: 10%;
+    margin-left: 1%;
+    background-color: rgb(139,69,19);
+    box-shadow: var(--box-shadow);
+    font-size: 20px;
+}
+
+.li-styles{
+    font-family: 'Abril Fatface', serif;
+}
+
+h4{
+    display: none;
+}
+
+.row{
+    display: flex;
+    padding: 3%;
+    padding-top: 5%;
+    flex: 1 1 250px;
+    text-align: right;
+    min-height: 80vh; 
+    position: absolute;
+    float: right; 
+}
+
+.card-column img{
+    width: 100%;
+    min-width: 300px;
+    padding: 2%;
+    height: 50vh;
+    box-shadow: var(--box-shadow);
+}
+
+.card-column:hover{
+    transform: scale(1.1);
+}
+
+.right li:hover{
+    font-weight: bold;
+}
+
+.row:hover #card-1::before{
+    z-index: 1;
+    content: 'JavaScript';
+    background-color: #eed09dc9;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    padding: 2%;
+    width: 18%;
+    justify-content: center;
+    margin-top: 15%;
+    font-family: 'Abril Fatface', serif;
+    font-size: large;
+}
+
+.row:hover #card-2::before{
+    z-index: 1;
+    content: 'HTML Structure';
+    background-color: var(--backg-color-hover);
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    padding: 2%;
+    width: 18%;
+    justify-content: center;
+    margin-top: 15%;
+    font-family: 'Abril Fatface', serif;
+    font-size: large;
+}
+
+.row:hover #card-3::before{
+    z-index: 1;
+    content: 'CSS Styles';
+    background-color: var(--backg-color-hover);
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    padding: 2%;
+    width: 18%;
+    justify-content: center;
+    margin-top: 15%;
+    font-family: 'Abril Fatface', serif;
+    font-size: large;
+}
+
+.row:hover #card-4::before{
+    z-index: 1;
+    content: 'GitHub';
+    background-color: var(--backg-color-hover);
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    padding: 2%;
+    width: 18%;
+    justify-content: center;
+    margin-top: 15%;
+    font-family: 'Abril Fatface', serif;
+    font-size: large;
+}
+
+
+
+.card-text p{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    border-top: var(--border-all);
+    position: relative;
+    margin-top: 25%;
+    padding-top: 2%;
+    font-family: 'DM Serif Display', serif;
+}
+
+/* .career-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 100%;
+    border-top: var(--border-all);
+    padding: 1%;
+
+}
+
+.aside img{
+    flex: 2;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    width: 40%;
+    padding-top: 40%;
+    height: 85%;
+}
+
+.lay-over{
+    background-color: rgba(139, 69, 19, 0.672);
+    z-index: 1;
+    box-sizing: border-box;
+    width: 30%;
+    height: 90%;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 45%;
+}
+
+.goals p{
+    flex: 3;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: right;
+    float: right;
+    width: 45%;
+    position: relative;
+} */
+
+footer p{
+    color: black;
+    opacity: 0.5;
+    font-family: 'Abril Fatface', serif;
+    justify-content: center;
+    text-align: center;
+    border-top: var(--border-all);
+    margin-top: 38%;
+    padding: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    header,
+    main {
+      flex-direction: column;
+    }
+
+    section {
+      padding-right: 0;
+    }
+
+    aside {
+      width: 100%;
+      text-align: center;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .card-text p{
+        display: none;
+    }
+
+    .footer{
+        display: none;
+    }
+}
