@@ -10,26 +10,33 @@
     <link rel="stylesheet" href="./Assets/css/styles.css">
 </head>
 <body>
+    
+    <!-- Div section showing the Title and presentation of the portfolio : Navigation links and Author name included -->
     <div class="main-page">
         <section class="container">
             <div class="bar">
                 <header>
                     <h1>Development <span class="title-span">Portfolio</span></h1>
                     <p>Learning is always the best way to INVEST.</p>
+                    <!-- Name of the Author  -->
                     <p class="left">- Maria Angulo.</p>
                 </header>
+                <!-- Nav links to navigate inside of the Web. -->
                 <nav>
                     <ul>
-                        <li class="nav"><a href="#about-me">About Me</a></li>
-                        <li class="nav"><a href="#soft-skills">Soft Skills</a></li>
-                        <li class="nav"><a href="#experience">Development Experience</a></li>
+                        <li class="nav"><a href="#about-me">About Me.</a></li>
+                        <li class="nav"><a href="#soft-skills">Soft Skills.</a></li>
+                        <li class="nav"><a href="#experience">Experience.</a></li>
+                        <li class="nav"><a href="#projects">Projects.</a></li>
                     </ul>
                 </nav>
             </div>
         </section>
     </div>
 
+    <!-- Main Section deploys the structure of the general Portfolio -->
     <main>
+        <!-- Contact bar -->
         <div id="about-me" class="first-layout">
             <aside>
                 <img id="myself-pic" src="./Assets/img/IMG_6879.jpeg" alt="myself">
@@ -40,15 +47,16 @@
                             <a href="https://github.com/maferadr?tab=repositories">maferadr</a>
                         </li>
                         <li>Gmail
-                            <a href="mailto:maferadr0604@gmail.com">maferadr0604@gmail.com</a>
+                            <a href="https://mail.google.com/mail/u/0/">maferadr0604@gmail.com</a>
                         </li>
                         <li>Phone Number
-                            <a href="">+1 321-315-8709</a>
+                            <a href="https://wa.me/[+13213158709]?text=[YOUR_MESSAGE]">+1-321-315-8709</a>
                         </li>
                     </ul>
                 </section>
             </aside>
     
+            <!-- About me Section - Giving the user a general idea of the author -->
             <section class="read-me">
                 <h2 class="title-first">About ME</h2>
                 <p>As a child I thought that I had my life structured already, based on 3 simple things:
@@ -79,9 +87,8 @@
             </section>
         </div>
         
-
+        <!-- First nav link of the portfolio - Soft and personal skills of the Author -->
         <div>
-
             <section id="soft-skills" class="qualities">
                 <div class="left">
                     <img src="./Assets/img/soft-skills-ppl.jpg" alt="soft-skills">
@@ -96,55 +103,70 @@
                     </ul>
                 </div>
             </section>
-
-            <section id="experience" class="row justify-content">
-                <div id="card-1" class="card-column">
-                    <img src="./Assets/img/dev-experience.jpg">
-                </div>
-
-                <div class="card-column" id="card-2">
-                    <img src="./Assets/img/experience.jpg">
-                </div>
-
-                <div class="card-column" id="card-3">
-                    <img src="./Assets/img/css-dev.jpg">
-                </div>
-
-                <div class="card-column" id="card-4">
-                    <img src="./Assets/img/github.jpg">
-                </div>
-            <section class="row justify-content">
-                <div class="card-text">
-                    <p>Been taking online coding classes for over a year, gaining some experience
-                        at developing HTML and CSS basics as well as JavaScript language for Web Design.
-                    </p>
-                </div>
-            </section>    
-            </section>
         </div>
 
-        <!-- <div id="career-goals" class="career-section">
-            <section class="aside">
-                <img src="./Assets/img/career-goals.jpg">
-            </section>
-            <section class="lay-over">
-                <h5>Career Goals</h5>
-            </section>
-            
-            <section class="goals">
-                <p>As a child I thought that I had my life structured already, based on 3 simple things:
-                    Getting graduated from High School, beggining at the University and getting a job right
-                    after that. Everything seemed so easy for a child living in Venezuela where everything that
-                    she had to worry about was studying. </p>
-            </section>
-        </div> -->
+        <!-- Flexbox use to deploy the layout of the Second portfolio's section regarding the coding and development experience that the author has -->
+        <div id="experience" class="row">
+            <!-- Each div deploys each layout of the flexbox by itself with an image column and desciptive text. -->
+            <div class="column">
+                <img class="larger-size" src="./Assets/img/larger-size.jpg">
+            </div>
+            <div class="column" id="column-text">
+                <h2 class="h2-column">Development Experience</h2>
+                <p class="p-column">For over a year I've been taking online courses about coding and programming
+                    languages regarding the basics of HTML, CSS and JavaScript logic. Going through
+                    everything on this path has become way clearer to me, since I've been getting familiar
+                    with programming complements as working with GitHub repositories, Team work experiences,
+                    debugging and pseudo-coding, etc.
+                    <br>
+                    <br>
+                    This would become as an example of developing a web Portfolio from the scratch with just
+                    HTML and CSS code, making use of Flexbox and Grid layouts for the Application deployment.
+                </p>
+            </div>
+            <div class="column">
+                <img src="./Assets/img/web-dev.jpg">
+                <img class="smaller-size" src="./Assets/img/project-deploy.jpg">
+            </div>
+
+        </div>
+
+        
+        <!-- Project simulator - Showing the user a picture of simulative projects that the author has done as well as the link to navigate to one of them -->
+        <div>
+            <h2 id="projects">Development Projects</h2>
+        </div>
+        <!-- Each div deploys each layout of the flexbox by itself with an image column and desciptive text. -->
+        <div class="row-container">
+            <div class="column-container">
+                <img src="./Assets/img/dev-experience.jpg">
+            </div>
+            <div class="column-container">
+                <img src="./Assets/img/experience.jpg">
+                <ul class="text-project">
+                    <li>Built and created Websites for restaurants.</li>
+                    <li>Chatbots and Chat GPT simulators.</li>
+                    <li>Built differents Mobile apps with JavaScript.</li>
+                </ul>
+            </div>
+            <div class="column-container">
+                <p class="text-project">Applications deployed in GitHub repositories for better user understanding.
+                    Github Pages improves their deployment.
+                </p>
+                <img src="./Assets/img/github.jpg">
+            </div>
+            <div class="column-container" id="project-deployed">
+                <a href="https://www.pexels.com/search/web%20development%20projects/"><img src="./Assets/img/dev-portfolio.jpg"></a>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Maria Angulo, 2023.</p>
+        </footer>
 
     </main>
-
-    <footer>
-        <p>Maria Angulo, 2023.</p>
-    </footer>
-
     
 </body>
 </html>
